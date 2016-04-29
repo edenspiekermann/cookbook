@@ -1,15 +1,20 @@
 #frankfurter-kranz {
   body {
-    padding: 50px;
     border: 1px solid green;
     background-color: white;
-    margin: 20px;
     background-size:cover;
     background-position: center;
     font-family: arial,sans-serif;
     background-repeat: no-repeat;
     color:darkred;
     background-image: url('/assets/images/frankfurter-kranz/frankfurter02.jpg');
+  }
+
+  @media (min-width: 400px) {
+    body {
+      margin: 20px;
+      padding: 50px;
+    }
   }
 
   h2 {
@@ -31,6 +36,7 @@
     margin-left: auto;
     background-color: rgba(100%, 100%, 100%, 0.9);
     padding: 30px;
+    box-sizing: border-box;
   }
 
   .appetit {

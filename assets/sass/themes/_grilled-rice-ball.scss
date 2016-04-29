@@ -17,12 +17,17 @@
     line-height: 0.9;
     margin-top: 0px;
     margin-bottom: 40px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-image: url('/assets/images/grilled-rice-ball/cat.svg');
-    background-repeat: no-repeat;
-    padding-top: 40px;
-    background-position: top right;
+  }
+
+  @media (min-width: 500px) {
+    h1 {
+      padding-left: 80px;
+      padding-right: 80px;
+      background-image: url('/assets/images/grilled-rice-ball/cat.svg');
+      background-repeat: no-repeat;
+      padding-top: 40px;
+      background-position: top right;
+    }
   }
 
   h2 {
