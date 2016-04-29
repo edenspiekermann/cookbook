@@ -3,15 +3,23 @@ layout: default
 lang: en
 ---
 
+<header role="banner" class="index-header">
+  <span>ESPI</span> Cookbook
+</header>
+
 <ul class="recipe-list">
 {% for recipe in site.recipes %}
   <li class="recipe-list__item">
     <div class="recipe-list__image" style="background-image: url('{{ recipe.image }}');" aria-hidden="true"></div>
     <a class="recipe-list__link"
        href="{{ recipe.url }}">
-      {{ recipe.title }}
+      <span class="recipe-list__title">{{ recipe.title }}</span>
       <span class="recipe-list__author">by {{ recipe.author }}</span>
     </a>
   </li>
 {% endfor %}
 </ul>
+
+<footer class="index-footer" role="contentinfo">
+  <p>Made by members of <a href="http://edenspiekermann.com">Edenspiekermann</a> as part of ESPI Maker Days 2016</p>
+</footer>

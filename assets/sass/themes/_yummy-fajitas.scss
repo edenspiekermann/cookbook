@@ -1,0 +1,307 @@
+#yummy-fajitas {
+
+  /* -------------------------------------------------------------------------- *\
+   * Base
+   * -------------------------------------------------------------------------- */
+
+  /**
+   * 1. Apply a propre box model to all elements in the document.
+   */
+  * {
+    box-sizing: border-box; /* 1 */
+  }
+
+  /**
+   * 1. `font` is a shortcut for a lot of font related properties; here we specify
+   *    the font-size in percentage to respect the option set in the users’
+   *    browser, the line-height relative to the font-size, and the font that we
+   *    use and the tope of font that we use as a default if the font cannot be
+   *    loaded.
+   */
+  body {
+    font: 125% / 1.4 'ESPI', sans-serif; /* 1 */
+  }
+
+  /**
+   * 1. Make the links inherit the color of their container.
+   * 2. Replace the default underline from links with a custom bottom border.
+   * 3. Add a transition so that the color change on hover is not abrupt. 
+   */
+  a {
+    color: inherit; /* 1 */
+    text-decoration: none; /* 2 */
+    border-bottom: 1px solid; /* 2 */
+    transition: 0.15s; /* 4 */
+  }
+
+  /**
+   * 1. Change the color of the hyperlinks when hovered or active.
+   */
+  a:hover,
+  a:active {
+    color: #673AB7; /* 1 */
+  }
+
+  /**
+   * 1. Remove the default left padding from lists.
+   * 2. Move the bullet / number inside the list items.
+   */
+  ol,
+  ul {
+    padding-left: 0; /* 1 */
+    list-style-position: inside; /* 2 */
+  }
+
+  /**
+   * 1. Add a bottom gap below list items.
+   */
+  li {
+    margin-bottom: 10px; /* 1 */
+  }
+
+  /* -------------------------------------------------------------------------- *\
+   * Icon
+   * -------------------------------------------------------------------------- */
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentcolor;
+    transform: translateY(3px);
+  }
+
+
+  /* -------------------------------------------------------------------------- *\
+   * Header
+   * -------------------------------------------------------------------------- */
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+    min-height: 50vh;
+    margin-top: 10px;
+    background-image: url('http://www.santamariaworld.com/globalassets/uk/recipes/all_in_one_steak_fajitas.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: 'ESPI Slab', serif;
+  }
+
+  .header::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .header-title {
+    position: relative;
+    margin: 0;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+  }
+
+  @media (min-width: 400px) {
+    .header-title {
+      font-size: 5em;
+    }
+  }
+
+
+  /* -------------------------------------------------------------------------- *\
+   * Meta info
+   * -------------------------------------------------------------------------- */
+
+  .meta {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .meta__inner {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .meta__item {
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .meta__icon {
+    margin-right: 5px;
+  }
+
+  @media (min-width: 500px) {
+    .meta__inner {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .meta__item {
+      display: inline-block;
+      flex: 1;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 0;
+    }
+
+    .meta__item:last-child {
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+
+  /* -------------------------------------------------------------------------- *\
+   * Section
+   * -------------------------------------------------------------------------- */
+
+  .section {
+    max-width: 700px;
+    margin: 50px auto 25px;
+    padding: 0 20px;
+  }
+
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin: 0 -10px 25px;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    content: '';
+    height: 0;
+    border-top: double 3px #673AB7;
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  @media (min-width: 400px) {
+    .section {
+      margin: 100px auto 50px;
+    }
+
+    .section-title {
+      margin-bottom: 50px;
+    }
+  }
+
+
+  /* -------------------------------------------------------------------------- *\
+   * Comments
+   * -------------------------------------------------------------------------- */
+
+  .comment {
+    position: relative;
+    padding: 20px;
+    margin: 30px auto;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    font-style: italic;
+  }
+
+  .comment--note {
+    background-color: #E3F2FD;
+  }
+
+  .comment--warning {
+    background-color: #FFCDD2; 
+  }
+
+  @media (min-width: 400px) {
+    .comment {
+      padding-left: 80px;
+    }
+
+    .comment__icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      opacity: 0.5;
+    }
+  }
+
+
+  /* -------------------------------------------------------------------------- *\
+   * Step list
+   * -------------------------------------------------------------------------- */
+
+  .step-list {
+    padding: 0;
+    list-style: none;
+    counter-reset: ordered-list;
+  }
+
+  .step-list__item {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    counter-increment: ordered-list;
+    text-align: center;
+  }
+
+  .step-list__item::before {
+    content: counter(ordered-list);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #D1C4E9;
+    font-family: 'ESPI Slab', serif;
+  }
+
+  @media (min-width: 350px) {
+    .step-list {
+      margin-left: 50px;
+    }
+    
+    .step-list__item {
+      padding-top: 0;
+      margin-bottom: 20px;
+      text-align: left;
+      text-align: start;
+    }
+
+    .step-list__item::before {
+      transform: translateY(3px);
+      font-size: 70%;
+      width: 20px;
+      height: 20px;
+      left: auto;
+      right: calc(100% + 20px);
+    }
+  }
+
+
+  /* -------------------------------------------------------------------------- *\
+   * Footer
+   * -------------------------------------------------------------------------- */
+
+  .footer {
+    text-align: center;
+    font-size: 80%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+}
