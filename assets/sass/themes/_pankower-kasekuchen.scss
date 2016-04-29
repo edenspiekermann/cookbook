@@ -4,11 +4,12 @@
   }
 
   body {
-    font-family: Corbel;
+    font-family: 'Corbel', 'Mark Web Pro', sans-serif;
     background-image: url("/assets/images/pankower-kasekuchen/tile.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    line-height: 1.35;
   }
 
   h1 {
@@ -41,7 +42,6 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    font-size: 18px;
     color: rgb(60,60,60);
   }
 
@@ -52,9 +52,9 @@
   }
 
   .containertop {
-    font-family: chalkduster;
+    font-family: 'chalkduster', sans-serif;
     background-color: rgba(100%,100%,100%,0.6);
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 
@@ -71,7 +71,7 @@
     height: 27px;
     margin-left: 10px;
     margin-right: 7px;
-    vertical-align: text-top;
+    vertical-align: top;
   }
 
   .socialmedia {
@@ -84,8 +84,6 @@
   }
 
   .containerbottom {
-    font-family: Corbel;
-    font-size: 14px;
     width: 700px;
     max-width: 100%;
     margin-left: auto;
@@ -95,6 +93,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: rgba(100%,100%,100%,0.6);
     border-radius: 10px;
   }
