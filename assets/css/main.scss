@@ -5,8 +5,21 @@
 
 @import 'base/fonts';
 @import 'base/base';
+
 @import 'layout/header';
 @import 'layout/footer';
+
 @import 'components/index-list';
+@import 'components/top-banner';
+
+@import 'themes/almond-raspberry-tarte';
+@import 'themes/blaubeer-bananen-muffins';
+@import 'themes/chocolate-guinness-cake';
+@import 'themes/frankfurter-kranz';
+@import 'themes/grilled-rice-ball';
+@import 'themes/pankower-kasekuchen';
+@import 'themes/pellkartoffeln-mit-quark-und-leinol';
+@import 'themes/shakshuka';
 @import 'themes/yummy-fajitas';
+@import 'themes/zucchini-goatcheese-lasagna';
 

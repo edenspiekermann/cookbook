@@ -1,0 +1,129 @@
+#pellkartoffeln-mit-quark-und-leinol {
+  h1.title {
+    color: #5FB404;
+    font-size: 20px;
+    font-family: trajan pro;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: #5FB404;
+    font-family: trajan pro;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #5FB404;
+    font-family: courier;
+    font-size: 14px;
+  }
+
+  p.abstand {
+    margin-bottom: 0;
+  }
+
+  p.abstand + p {
+    margin-top: 4px;
+  }
+
+  .container {
+    width: 800px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .coleft {
+    width: 66.666%;
+    float: left;
+  }
+
+  .coleft h2 {
+    margin-top: 30px;
+  }
+
+  .coright {
+    width: 30%;
+    float: right;
+    margin-top: 24px;
+    margin-left: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin-top: 35px;
+  }
+
+  .coright img {
+    margin-bottom: 35;
+    margin-top: 183;
+  }
+
+  ul {
+    padding-left: 18px;
+    list-style: none;
+    margin-top: 0;
+  }
+
+  ul li::before {
+    content: "✔ ";
+    margin-right: 5px;
+    color: #5FB404;
+    font-family: trajan pro;
+    font-size: 8px;
+  }
+
+  ul li {
+    padding-left: 20px;
+    text-indent: -20px;
+    margin-bottom: 7px;
+  }
+
+  ol li::before {
+    content: "♨ ";
+    margin-right: 3px;
+    color: #5FB404;
+    font-family: trajan pro;
+    font-size: 14px;
+  }
+
+  .abschluss {
+    clear: both;
+    text-align: center;
+    border-top: solid 5px;
+    border-color: #BCF5A9;
+  }
+
+  .zwischenzeit {
+    color: #5FB404;
+    font-family: courier;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .zwischenzeit::before {
+    content: none;
+  }
+
+  .abschluss p { 
+    color: #5FB404;
+    margin-bottom: 0;
+    margin-top: 4px;
+    padding: 20px 0;
+  }
+
+  ol {
+    padding-left: 18px;
+    list-style: none;
+  }
+
+  ol li {
+    padding-left: 20px;
+    text-indent: -20px;
+    margin-bottom: 7px;
+  }
+}

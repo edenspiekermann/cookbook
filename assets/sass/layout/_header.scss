@@ -1,11 +1,30 @@
 .index-header {
   font-size: 400%;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 80px;
+  position: relative;
 }
 
 .index-header span {
   font-family: 'ESPI Slab', serif;
   color: #ff4350;
   letter-spacing: 1px;
+}
+
+.index-header::after {
+  content: attr(data-emoji);
+  background-color: black;
+  border-radius: 50%;
+  font-size: 80%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 2;
 }

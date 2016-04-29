@@ -1,0 +1,48 @@
+#frankfurter-kranz {
+  body {
+    padding: 50px;
+    border: 1px solid green;
+    background-color: white;
+    margin: 20px;
+    background-size:cover;
+    background-position: center;
+    font-family: arial,sans-serif;
+    background-repeat: no-repeat;
+    color:darkred;
+    background-image: url('/assets/images/frankfurter-kranz/frankfurter02.jpg');
+  }
+
+  h2 {
+    color: green;
+    font-family: arial,sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 700px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .blah {
+    width:800px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(100%, 100%, 100%, 0.9);
+    padding: 30px;
+  }
+
+  .appetit {
+    color: green;
+    font-family: vivaldi, "Brush Script", fantasy;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-top: 30px;
+  }
+
+  ol li {
+    margin-bottom: 10px;
+  }
+}

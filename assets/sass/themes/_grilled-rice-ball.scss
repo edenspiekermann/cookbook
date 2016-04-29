@@ -1,0 +1,154 @@
+#grilled-rice-ball {
+  body {
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url("/assets/images/grilled-rice-ball/tile.jpg");
+    background-position:center;
+    padding-top: 0px;
+    font-size: 125%;
+    font-family: Unit Pro, YuGothic;
+  }
+
+  h1 {
+    color: white;
+    font-size: 520%;
+    text-align: center;
+    line-height: 0.9;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-image: url('/assets/images/grilled-rice-ball/cat.svg');
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    background-position: top right;
+  }
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20;
+    letter-spacing: 0.3px;
+  }
+
+  ul {
+    color: white;
+    text-transform: none;
+    line-height: 1.45;
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  ol  {
+    color: white;
+    list-style: none;
+    counter-reset: circle;
+    text-transform: none;
+    line-height: 1.45;
+    padding-left: 40px;
+  }
+
+  ol li {
+    counter-increment: circle;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -40px;
+  }
+
+  ol li::before{
+    content: counter(circle);
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px; 
+    text-indent: 0;
+    line-height: 32px;
+  }
+
+  .container {
+    width: 700px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+  }
+
+  .toptop {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .top {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 860px;
+  }
+
+  .bottom {
+    padding-top: 10px;
+  }
+
+  :lang(ja) {
+    font-family: "Tsukushi A Round Gothic";
+  }
+
+  .title-japanese {
+    font-size: 40%;
+    color: white;
+    line-height: 1.2;
+    display: block;
+    padding-top: 2px;
+  } 
+
+  a {
+    color: hotpink;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a:visited {
+    color: hotpink;
+  }
+
+  a:hover {
+    color: pink;
+    border-width: 0 0 2px;
+    border-style: solid;
+  }
+
+  a:active {
+    color: white;
+  }
+
+  .footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .footer p {
+    vertical-align: middle;
+    color: white;
+    font-size: 70%;
+    margin-bottom: 0;
+  }
+
+  .svg {
+    fill: white;
+  }
+
+  .check {
+    background-image: url("/assets/images/grilled-rice-ball/Icon_Notice.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 40px;
+  }
+}

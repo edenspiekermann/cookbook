@@ -1,0 +1,122 @@
+#chocolate-guinness-cake {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: futura; 
+    margin: 0;
+    padding-bottom: 100px;
+    border-bottom: 200px solid #deede9;
+  }
+
+  img {
+    display: block;
+  }
+
+  .container {
+    width: 640px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .image {
+    margin-bottom: 20px;
+    margin-top: 60px;
+    max-width: 100%;
+  }
+
+  .main-title { 
+    font-size: 26px;
+    text-transform: uppercase; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
+  .main-12-slices { 
+    font-size: 16px;
+    line-height: 26px;
+    font-family: georgia;
+    font-style: italic; 
+    text-align:center; 
+  }
+
+  .main-header {
+    margin-bottom: 20px; 
+    margin: 0;
+    background-color: #deede9;
+    padding-top: 60px;  
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .secondary-heading {
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .tertiary-heading {
+    font-size: 16px;
+    text-align: justify;   
+    text-transform: capitalize; 
+    margin-top: 40px;   
+  }
+
+  .body-copy {
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: none;
+    font-weight: lighter;
+    font-style: normal;
+    text-decoration: none; 
+    font-family: georgia;
+    border-top: 10px;
+  }
+
+  .italicised-body-copy {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: none;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none; 
+    font-family: georgia;
+  }
+
+ .italicised-body-copy-center {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: none;
+    font-style: italic;
+    text-align:center;
+    text-decoration: none; 
+    margin-top: 0px;   
+    margin-bottom: 50px; 
+    font-family: georgia;
+  }
+
+  .container.bottom {
+    font-size: 16px;
+    line-height: 21px;
+    font-style: italic;
+    text-align:center;
+    text-decoration: none; 
+    margin-top: 0px;   
+    margin-bottom: 50px; 
+    font-family: georgia;
+  }
+
+  .footer {
+    position: relative;
+    margin: 0;
+    min-width: 100%;
+    height: 180px;
+    background: #deede9;
+    border-top: 100px;
+  }
+}

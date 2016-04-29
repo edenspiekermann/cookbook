@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang }}" id="{{ page.stylesheet }}">
 
   {% include head.html %}
 
-  <body id="{{ page.stylesheet }}">
+  <body>
     {% include sprite.html %}
+    <a href="/" id="top-banner">
+      « Back to the cookbook
+    </a>
     {{ content }}
   </body>
 

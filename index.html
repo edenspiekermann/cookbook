@@ -1,21 +1,23 @@
 ---
 layout: default
 lang: en
+stylesheet: index
 ---
 
-<header role="banner" class="index-header">
+<header role="banner" class="index-header" data-emoji="🍴">
   <span>ESPI</span> Cookbook
 </header>
 
 <ul class="recipe-list">
 {% for recipe in site.recipes %}
   <li class="recipe-list__item">
-    <div class="recipe-list__image" style="background-image: url('{{ recipe.image }}');" aria-hidden="true"></div>
+    <div class="recipe-list__image" style="background-image: url('/assets/images/{{ recipe.stylesheet }}/tile.jpg');" aria-hidden="true"></div>
     <a class="recipe-list__link"
        href="{{ recipe.url }}">
       <span class="recipe-list__title">{{ recipe.title }}</span>
       <span class="recipe-list__author">by {{ recipe.author }}</span>
     </a>
+    <span class="recipe-list__credits">Image from <a href="{{ recipe.image_credit }}">Google</a></span>
   </li>
 {% endfor %}
 </ul>
@@ -23,3 +25,21 @@ lang: en
 <footer class="index-footer" role="contentinfo">
   <p>Made by members of <a href="http://edenspiekermann.com">Edenspiekermann</a> as part of ESPI Maker Days 2016</p>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', init)
+
+function init() {
+  var header = document.querySelector('.index-header')
+  var emojis = ['🍅', '🍆', '🌽', '🍠', '🍇', '🍈', '🍉', '🍊', '🍋', '🍌', '🍍', '🍎', '🍏', '🍐', '🍑', '🍒', '🍓', '🍔', '🍕', '🍖', '🍗', '🍘', '🍙', '🍚', '🍛', '🍜', '🍝', '🍞', '🍟', '🍡', '🍢', '🍣', '🍤', '🍥', '🍦', '🍧', '🍨', '🍩', '🍪', '🍫', '🍬', '🍭', '🍮', '🍯', '🍰', '🍱', '🍲', '🍳', '🍴', '🍵', '☕', '️', '🍶', '🍷', '🍸', '🍹', '🍺', '🍻', '🍼']
+  var interval = 1000
+  var currentIndex = 0
+  var timer = setInterval(function () {
+    if (currentIndex === emojis.length - 1) {
+      currentIndex = 0;
+    }
+
+    header.setAttribute('data-emoji', emojis[currentIndex++])
+  }, interval)
+}
+</script>

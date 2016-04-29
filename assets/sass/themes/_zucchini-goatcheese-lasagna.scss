@@ -1,0 +1,166 @@
+#zucchini-goatcheese-lasagna {
+  body {
+    line-height: 1.5
+  }
+
+  .title {
+    color: #69615B;
+    background-color: #E3DEDA;
+    font-size: 28px;
+    text-align: center;
+    font-family: optima, serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    color: darkgreen;
+    background-color: white;
+    font-size: 20px;
+    font-family: optima, serif;
+    margin-left: inherit;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  p{
+    color: darkred;
+    background-color: white;
+    font-family: optima, serif;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  ul {
+    color: #BFBBB8;
+    font-family: optima, serif;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  ol{
+      color: #BFBBB8;
+      font-family: optima, serif;
+      font-size: 14px;
+      text-align: justify;
+      padding-left: 20px;
+      margin-bottom: 35px;
+  }
+
+  .emphasis {
+    font-weight: bold;
+  }
+
+  .container {
+    width: 700px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .final{
+    text-align: center;
+    font-size: 14px;
+    font-family: optima, serif;
+    margin-top: 5px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/zucchini-goatcheese-lasagna/mamacita.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .suggestion {
+    text-align: center;
+    font-family: optima, serif;
+    color: darkred;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .imagebottom{
+    background-color: #E3DEDA;
+    background-size: 50px;
+    color: #E3DEDA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .imagebottom2{
+    background-color: #E3DEDA;
+    background-size: 50px;
+    font-size: 13px;
+    color: #E3DEDA;
+    margin-top: -15px;
+    margin-bottom: -35px;
+  }
+
+  .intro{
+    color: darkred;
+      background-color: white;
+      font-family: optima, serif;
+      font-size: 14px;
+      margin-top: 25px;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+
+  .intro2{
+    color: darkred;
+    background-color: white;
+    font-family: optima, serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    margin-top: -15px;
+  }
+
+  .prep{
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .imagecenter{
+    background-color: #E3DEDA;
+    background-size: 20px;
+    color: #E3DEDA;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 7px;
+  }
+
+  .footer{
+    color: #69615B;
+    background-color: #E3DEDA;
+    font-size: 14px;
+    text-align: center;
+    font-family: optima, serif;
+    margin-top: -9px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .footer2 {
+    color: white;
+    background-color: #E3DEDA;
+    font-size: 12px;
+    text-align: center;
+    font-family: optima, serif;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+}

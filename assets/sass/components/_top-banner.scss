@@ -1,0 +1,17 @@
+#top-banner {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  background-color: white;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'ESPI Slab';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#index #top-banner {
+  display: none;
+}
