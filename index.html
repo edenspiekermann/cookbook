@@ -10,10 +10,11 @@ stylesheet: index
 
 <ul class="recipe-list">
 {% for recipe in site.recipes %}
+  {% capture image_url %}/assets/images/{{ recipe.stylesheet }}/tile.jpg{% endcapture %}
   <li class="recipe-list__item">
-    <div class="recipe-list__image" style="background-image: url('/assets/images/{{ recipe.stylesheet }}/tile.jpg');" aria-hidden="true"></div>
+    <div class="recipe-list__image" style="background-image: url('{{ image_url | prepend: site.baseurl }}');" aria-hidden="true"></div>
     <a class="recipe-list__link"
-       href="{{ recipe.url }}">
+       href="{{ recipe.url | prepend: site.baseurl }}">
       <span class="recipe-list__title">{{ recipe.title }}</span>
       <span class="recipe-list__author">by {{ recipe.author }}</span>
     </a>
