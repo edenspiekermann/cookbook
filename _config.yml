@@ -11,7 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
   ESPI Cookbook is the creation of a cooking book by members of Edenspiekermann
   as part of Maker Days 2016, as an attempt to learn more about HTML and CSS
   web languages.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/cookbook" # the subpath of your site, e.g. /blog
 url: "http://edenspiekermann.github.io" # the base hostname & protocol for your site
 collections:
   recipes:
