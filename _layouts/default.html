@@ -5,7 +5,7 @@
 
   <body>
     {% include sprite.html %}
-    <a href="/" id="top-banner">
+    <a href="{{ site.baseurl | default: "/" }}" id="top-banner">
       « Back to the cookbook
     </a>
     {{ content }}
